@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AImentor@BIZINSIGHTS</title>
+    <link rel="stylesheet" href="../static/styles/response.css">
+    <link rel="shortcut icon" href="../static/assets/BizInsightsLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            BIZ<span>INSIGHTS</span>
+        </div>
+        <a href="/">
+            <span class="material-symbols-outlined">
+                home
+            </span>
+            Home
+        </a>
+    </div>
+    
+    <div class="wrapper">
+        <div class="header">
+            <h2>AI MENTORS</h2>
+            <h3>Pitch and get validation and analysis using AI</h3>
+            <p>Generated analysis successfully!</p>
+        </div>
+    
+    {% block content %}
+       <div class="container">
+           <div class="prompt">
+                <h3 class="title">Pitch:</h3> {{ data["Pitch"] }}
+           </div>
+            <div class="group">
+                <h4 class="title">Analysis and Tips: </h4>
+                <ul>
+                    {% for chunk in data["Analysis"] %}
+                        <li>{{ chunk }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+       </div>
+    {% endblock %}
+    </div>
+</body>
+</html>

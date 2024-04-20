@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Lilita+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    margin: 2em 0 0 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.nav {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    line-height: 5rem;
+}
+
+.logo {
+    margin-left: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-left: 60vw;
+    font-size: 20px;
+    gap: 5px;
+}
+
+.logo span {
+    color: #dbfc4a;
+}
+
+#form {
+    position: relative;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+#form .content{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dbfc4a;
+    padding: 0.5vw 2vw;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 3px currentColor;
+    max-height: 70vh;
+    display: flex;
+}
+
+#form .content h3 {
+    color: #dbfc4a;
+}
+
+#form .content .body {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1vw;
+}
+
+#form .content .body .image img {
+    width: 50%;
+}
+
+#form .data {
+    display: flex;
+    gap: 1.5vw;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#form .data input {
+    margin-bottom: 2vw;
+    background-color: rgba(1, 1, 1, 0.5);
+    border: 1px solid #fff;
+    outline: none;
+    padding: 1.5vw;
+    border-radius: 1vw;
+    color: #fff;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+#form .data input:hover,
+#form .data input:focus {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 3px #fff;
+}
+
+#form .data span {
+    color: #000;
+}
+
+#form .data button {
+    background-color: #dbfc4a;
+    border-radius: 1vw;
+    padding: 1vw;
+    cursor: pointer;
+}
+
+.wrapper {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dbfc4a;
+    padding: 1.5vw 2vw;
+    border-radius: 1.5rem;
+}
+
+.wrapper .header{
+    font-size: 70%;
+}
+
+.wrapper .header p {
+    color: #dbfc4a;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.prompt, .group {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 2vw;
+    border-radius: 1rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper .container .title {
+    color: #dbfc4a;
+}
+
+.prompt {
+    border: 1px solid white;
+}
+  
+.container .group .body ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    list-style: none;
+}
+
+.container .group:nth-child(3n-1)  {
+    background: linear-gradient(90deg, hsla(259, 84%, 78%, 1) 0%, hsla(206, 67%, 75%, 1) 100%);
+    box-shadow: 0 0 3px hsla(259, 84%, 78%, 1);
+}
+
+.container .group:nth-child(3n) {
+    background: linear-gradient(90deg, hsla(169, 76%, 48%, 0.5) 0%, hsla(67, 87%, 82%, 0.5) 100%);
+    box-shadow: 0 0 3px hsla(169, 76%, 48%, 0.5);
+}
+
+.container .group:nth-child(3n+1)  {
+    background: linear-gradient(90deg, hsla(312, 66%, 76%, 0.5) 0%, hsla(234, 93%, 67%, 0.5) 100%);
+    box-shadow: 0 0 3px hsla(312, 66%, 76%, 0.5);
+}
+
